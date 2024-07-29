@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-danger" href="index.html"><em>Unique Style</em></a>
+            <div class="input-group">
+                <input type="text" class="form-control" style="max-width: 400px;" placeholder="Search" aria-label="Search" aria-describedby="search-button">
+                <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Home <i class="fa-sharp fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop <i class="fa-solid fa-shop"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shoppingcart.html">Cart <i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signInModal">Login <i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- ****************************************Header section ended************************************* -->
+
+<!-- Sign In Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- ***************************** sign-in form here************************************** -->
+                
+                <div class="container-1" style="margin-top: 10px;">
+                    <div class="login-form">
+                        <h3>LOGIN OR SIGNUP</h3>
+                        <form action="login.page" method="POST">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <button type="submit">Login</button>
+                        </form>
+                        <p>OR CONTINUE WITH:</p>
+                        <div class="social-login">
+                            <a href="https://www.facebook.com" class="facebook-login bg-primary">Login with Facebook</a>
+                            <a href="mailto:uniquestyle@email.com" class="email-login bg-warning">Login with Email</a>
+                            <a href="tel:+1234567890" class="phone-login bg-success">Login with Phone Number</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ************************************Header ending************************************* -->
+        <!-- ***********************Offer section Ended***************************** -->
+        <div class="container mt-4">
+            <!-- Product Detail Content -->
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/img2.jpg" alt="Product" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mt-5">GLARE & BLAIR</h2>
+                    <p class="text-muted">Original Price: <del>₹600</del></p>
+                    <p class="text-success">Price After Discount: ₹450</p>
+                    <!-- Additional product details -->
+                    <p>Product Code: <b>PRD123456</b></p>
+                    <p>Availability: <b> In Stock</b></p>
+                    <p>Color Options: <span class="text-primary">Blue</span>, <span class="text-danger">Red</span>, <span class="text-success">Green</span></p>
+                     
+                    <p>Name : Stylish Smoked Crop Top <br>
+
+                        Fabric : Polyester <br>
+                        
+                        Sleeve Length : Sleeveless <br>
+                        
+                        Pattern : Printed <br>
+                        
+                        Net Quantity (N) : 1 <br>
+                        
+                       <b> Size Options:</b> Small, Medium, Large <br>
+                        
+                        SIZE DETAILS <br>
+                        
+                        XS- 32inch L-13 <br>
+                        
+                        S - 34inch L-13 <br>
+                        
+                        M- 36inch L-13 <br>
+                        
+                        L - 38inch L -13 <br>
+                         
+                        XL-40inch L -13 <br>
+                        
+                        Country of Origin :<b>India </b></p>
+                    <!-- Add to Cart button -->
+                    
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Add To cart
+                    </button>
+                    
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">uniquestyle</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                    
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            
+                            <img src="images/img2.jpg" alt="" height="50px" width="50px">
+                             Item added to cart<i class="fa fa-cart-shopping ms-5"></i>
+                          </div>
+                    
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          </div>
+                    
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- *************************This is Ending of Header Section****************************8-->
+    <!-- *************************This is footer part************************** -->
+  
+    <div class="container-fuild bg-danger px-5  text-white mt-4">
+      <div class="row row-cols-lg-6 row-cols-md-3 row-cols-sm-2">
+          <div class="col-md mt-5 ">
+              <h4>ABOUT</h4>
+              <a href="contact.html" style="color: white; text-decoration:none;" ><P>Contact Us</P></a>
+             <a href="about.html" style="color: white; text-decoration:none;"> <P> About Us</P></a>
+              
+               
+          </div>
+          <div class="col-md mt-5">
+            <a href="contact.html" style="color: white; text-decoration:none;" ><h4>HELP</h4></a>
+              <a href="payment2.html" style="color: white; text-decoration:none;"> <P>Payments</P></a>
+              <a href="contact.html" style="color: white; text-decoration:none;"><P>Shipping</P></a>
+              
+              <a href="Return.html" style="color: white; text-decoration:none;"><P>Cancellation & Returns</P></a>
+               
+          </div>
+
+          <div class="col-md mt-5">
+              <a href="terms.html" style="color: white; text-decoration:none;"><h4>CONSUMER POLICY</h4></a>
+              <a href="Return.html" style="color: white; text-decoration:none;"><P>Cancellation & Returns</P></a>
+              <a href="terms.html" style="color: white; text-decoration:none;"><P>Terms Of Use</P></a>
+              
+               
+          </div>
+          <div class="col-md mt-5">
+              <h4>SOCIAL</h4>
+              <a href="https://www.facebook.com" style="color: white; text-decoration:none;"><P>Facebook</P></a>
+              <a href="https://twitter.com/" style="color: white; text-decoration:none;"><P>Twitter</P></a>
+                <a href="https://www.youtube.com" style="color: white; text-decoration:none;"><P>Youtube</P></a>
+                <a href="https://www.instagram.com" style="color: white; text-decoration:none;"><P>Instagram</P></a>
+          </div>
+          <div class="col-md mt-5 ">
+              <h4> Mail Us:</h4>
+              <P>  K-13 Mahipalpur
+                Block-2
+                  New dehli, 560103,
+                   , India</P>
+                   <b>Head Office</b>
+                   <p>Pune & Mumbai,
+                    820102,
+                    , India
+                   </p>
+          </div>
+          
+
+      </div>
+      <div class="row  border-top mt-4">
+
+          <div class="col-md  my-1">
+            <a href="index.html" style="color: white; text-decoration:none;">  <p><i class="fa-solid fa-shop" style="color: #333023;"></i> Order Now</p></a>
+          </div>
+           
+          <div class="col-md  my-1">
+            <a href="contact.html" style="color: white; text-decoration:none;">    <p><i class="fa-solid fa-question" style="color: #333023;"></i> Help Center</p>
+          </a></div>
+          <div class="col-md  my-1">
+            <a href="https://www.google.com " style="color: white; text-decoration:none;">  <p><i class="fa-regular fa-copyright"></i> uniquestyle.com</p></a>
+          </div>
+          <div class="col-md  my-1"> <a href="payment.html" style="color: white; text-decoration:none;">
+              <p><i class="fa-brands fa-cc-mastercard fa-xl"></i>
+                  <i class="fa-brands fa-cc-visa fa-xl"></i>
+                  <i class="fa-brands fa-cc-stripe fa-xl"></i>
+                  <i class="fa-brands fa-cc-paypal fa-xl"></i>
+                  <i class="fa-brands fa-cc-jcb fa-xl"></i>
+                  <i class="fa-brands fa-cc-discover fa-xl"></i>
+                  <i class="fa-brands fa-cc-apple-pay fa-xl"></i> </a>
+                  
+          </div>
+      </div>
+
+  </div>
+        <!-- *************************This is Ending of Footer Section****************************8-->
+<Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+</Script>
+</body>
+</html>

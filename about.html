@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-danger" href="index.html"><em>Unique Style</em></a>
+            <div class="input-group">
+                <input type="text" class="form-control" style="max-width: 400px;" placeholder="Search" aria-label="Search" aria-describedby="search-button">
+                <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Home <i class="fa-sharp fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop <i class="fa-solid fa-shop"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shoppingcart.html">Cart <i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signInModal">Login <i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- ****************************************Header section ended************************************* -->
+
+<!-- Sign In Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- ***************************** sign-in form here************************************** -->
+                
+                <div class="container-1" style="margin-top: 10px;">
+                    <div class="login-form">
+                        <h3>LOGIN OR SIGNUP</h3>
+                        <form action="login.page" method="POST">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <button type="submit">Login</button>
+                        </form>
+                        <p>OR CONTINUE WITH:</p>
+                        <div class="social-login">
+                            <a href="https://www.facebook.com" class="facebook-login bg-primary">Login with Facebook</a>
+                            <a href="mailto:uniquestyle@email.com" class="email-login bg-warning">Login with Email</a>
+                            <a href="tel:+1234567890" class="phone-login bg-success">Login with Phone Number</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ************************************Header ending************************************* -->
+        
+        <div class="container1 bg-body-tertiary">
+            <div class="row mt-3 ms-5 ">
+                <h2 class="text-center">ABOUT US</h2>
+                <p>Shoppers Stop is home to a multitude of leading international and national brands for apparels,
+                    fragrances, accessories, cosmetics, footwear, home décor and furnishings catering to the needs of the
+                    entire family. We aspire to provide our customers a memorable international shopping experience. We are
+                    one of the largest chain of department stores across India.</p>
+                <h4> Our Vision Is,</h4>
+                <h5> <em>“To be an inspirational and trusted brand, transforming customers' lives through fashion and
+                        delightful shopping experience every time”</em></h5>
+                <p>We have a team of professional associates who strive endlessly to provide the best shopping experience to
+                    each of our customers. We have adopted a new philosophy of "Start Something New" to give retail a new
+                    dimension and innovation is our key driver to attain excellence in customer service.</p>
+    
+                <div>
+                    <button class="btn btn-outline-danger my-3 ms-5">WHY SHOP WITH US</button>
+                    <button class="btn btn-outline-danger my-3 ms-5">CORPORATE INFORMATION</button>
+                    <button class="btn btn-outline-danger my-3 ms-5">ABOUT UNIQUE STYLE</button>
+    
+                </div>
+                <div class="my-3 ms-2 ">
+                    <h4>WHY SHOP WITH US</h4>
+                    <h5>1. SIMPLE SHOPPING</h5>
+                    <p> Whether you shop online or in store or any of the leading third party marketplaces you get the same
+                        experience in terms of merchandise, price & service.</p>
+    
+                    <h5>2. SECURE SHOPPING</h5>
+                    <p>Shopping on our website is 100% safe and secure as we do not store complete details or payment
+                        information of your credit/debit card in our system. This is information is directly transmitted
+                        securely to the bank for payment processing. However, caution must always be taken by the customer
+                        while making transactions on any online venue.</p>
+                    <h5>3.RANGE OF PRODUCTS AND BRANDS</h5>
+                    <p>We assort the collection from the best brands, trends, colours, fabrics, patterns to bring you a deep
+                        fashion selection wide across Men, Women, Kids, Fashion Accessories, and Home categories.</p>
+                    <h5>4.FREE RETURNS</h5>
+                    <p>At Shoppers Stop we follow a policy that is – "We are responsible for what we sell". We offer free
+                        and easy returns on most of the merchandise bought online. If you are not completely satisfied with
+                        your purchase you can return the items via a courier pick up or exchange them in any of our stores
+                        across India.</p>
+                    <h5>5.100% ORIGINAL</h5>
+                    <p>We are responsible for what we sell and guarantee the originality of the products. All our products
+                        are sourced directly from the brands and carry brand warranty and genuineness certificate.</p>
+                    <h5>6.FREE ALTERATIONS</h5>
+                    <p>We offer free alteration at any Store for products purchased on online as well.</p>
+                    <h5>7.EXPRESS STORE PICK UP</h5>
+                    <p>We provide the facility of express pick up service at the store. You can shop online and collect your
+                        order from the nearest or preferred Shoppers Stop store as per your convenience.</p>
+                    <h5>8.PERSONALIZED SHOPPING AT STORE</h5>
+                    <p>We offer personal shopper service with prior appointment at our store. You can avail the assistance
+                        of personal shoppers who are experts to guide you to shop in an exclusive lounge at the store.   </p>
+                </div> 
+                <hr>
+                <div>
+                    <h4>CORPORATE INFORMATION</h4>
+                    <p>Shoppers Stop stores have an unparalleled assortment of leading international and national brands in
+                        clothing for men, women, and kids, accessories, fragrances, cosmetics, footwear; home furnishing and
+                        decor products. The stores aim to provide shoppers a truly international shopping destination.</p>
+                    <br>
+                    <p>Shoppers Stop has experienced and professional team that follows practices and systems which are
+                        world-class. The associates are passionate about providing the customers the best shopping
+                        experience. This vision has helped Shoppers Stop to grow from a single store in 1991 to the largest
+                        chain of department stores in India today. </p><br>
+                   <p> At Shoppers Stop the belief is in providing a fantastic shopping experience to the customers and
+                    setting benchmarks to gain success</p>
+                </div>
+                <hr>
+               <div class="col-md-6 my-3 ">
+                    <img src="images/p3.webp" alt="" height="450px" width="600px"></div> 
+                    <div class="col-md-6 my-3">
+                    <h3>ABOUT UNIQUE STYLE</h3>
+                    <P>Unique style is one of the leading developers and success story spanning over six decades. The
+                        company has made a significant impact on modern lifestyle by providing elegant residential, robust
+                        workplaces and world class hotels. K Raheja Corp has always been a step ahead on the curve of the
+                        green development sector. They signed a memorandum of understanding with the CII-Green Building
+                        Council to construct green buildings, way back in 2007. The constructions have extensive large
+                        eco-friendly landscapes as a contribution to develop green expanses in the country. Their buildings
+                        have been certified in the Gold and Platinum, and won accolades from prestigious forums.
+    
+                        The foundation of Shoppers Stop was laid on October 27, 1991, by the K. Raheja Corp. group of
+                        companies. Being amongst India's biggest hospitality and real estate players, the Group crossed yet
+                        another milestone with its lifestyle venture.</P>
+                    </div> 
+    
+    
+            </div>
+        </div>
+     
+    <!-- *************************This is Ending of Header Section****************************8-->
+            <!-- *************************This is footer part************************** -->
+  
+            <div class="container-fuild bg-danger px-5  text-white">
+                <div class="row row-cols-lg-6 row-cols-md-3 row-cols-sm-2">
+                    <div class="col-md mt-5 ">
+                        <h4>ABOUT</h4>
+                        <a href="contact.html" style="color: white; text-decoration:none;" ><P>Contact Us</P></a>
+                       <a href="about.html" style="color: white; text-decoration:none;"> <P> About Us</P></a>
+                        
+                         
+                    </div>
+                    <div class="col-md mt-5">
+                      <a href="contact.html" style="color: white; text-decoration:none;" ><h4>HELP</h4></a>
+                        <a href="payment.html" style="color: white; text-decoration:none;"> <P>Payments</P></a>
+                        <a href="contact.html" style="color: white; text-decoration:none;"><P>Shipping</P></a>
+                        
+                        <a href="Return.html" style="color: white; text-decoration:none;"><P>Cancellation & Returns</P></a>
+                         
+                    </div>
+        
+                    <div class="col-md mt-5">
+                        <a href="terms.html" style="color: white; text-decoration:none;"><h4>CONSUMER POLICY</h4></a>
+                        <a href="Return.html" style="color: white; text-decoration:none;"><P>Cancellation & Returns</P></a>
+                        <a href="terms.html" style="color: white; text-decoration:none;"><P>Terms Of Use</P></a>
+                        
+                         
+                    </div>
+                    <div class="col-md mt-5">
+                        <h4>SOCIAL</h4>
+                        <a href="https://www.facebook.com" style="color: white; text-decoration:none;"><P>Facebook</P></a>
+                        <a href="https://twitter.com/" style="color: white; text-decoration:none;"><P>Twitter</P></a>
+                          <a href="https://www.youtube.com" style="color: white; text-decoration:none;"><P>Youtube</P></a>
+                          <a href="https://www.instagram.com" style="color: white; text-decoration:none;"><P>Instagram</P></a>
+                    </div>
+                    <div class="col-md mt-5 ">
+                        <h4> Mail Us:</h4>
+                        <P>  K-13 Mahipalpur
+                          Block-2
+                            New dehli, 560103,
+                             , India</P>
+                             <b>Head Office</b>
+                             <p>Pune & Mumbai,
+                              820102,
+                              , India
+                             </p>
+                    </div>
+                    
+        
+                </div>
+                <div class="row  border-top mt-4">
+        
+                    <div class="col-md  my-1">
+                      <a href="index.html" style="color: white; text-decoration:none;">  <p><i class="fa-solid fa-shop" style="color: #333023;"></i> Order Now</p></a>
+                    </div>
+                     
+                    <div class="col-md  my-1">
+                        <a href="contact.html" style="color: white; text-decoration:none;">    <p><i class="fa-solid fa-question" style="color: #333023;"></i> Help Center</p>
+                      </a></div>
+                    <div class="col-md  my-1">
+                      <a href="https://www.google.com " style="color: white; text-decoration:none;">  <p><i class="fa-regular fa-copyright"></i> uniquestyle.com</p></a>
+                    </div>
+                    <div class="col-md  my-1"> <a href="payment.html" style="color: white; text-decoration:none;">
+                        <p><i class="fa-brands fa-cc-mastercard fa-xl"></i>
+                            <i class="fa-brands fa-cc-visa fa-xl"></i>
+                            <i class="fa-brands fa-cc-stripe fa-xl"></i>
+                            <i class="fa-brands fa-cc-paypal fa-xl"></i>
+                            <i class="fa-brands fa-cc-jcb fa-xl"></i>
+                            <i class="fa-brands fa-cc-discover fa-xl"></i>
+                            <i class="fa-brands fa-cc-apple-pay fa-xl"></i> </a>
+                            
+                    </div>
+                </div>
+        
+            </div>
+                  <!-- *************************This is Ending of Footer Section****************************8-->
+<Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+</Script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top header " >
+            <div class="container">
+                <a class="navbar-brand text-dark" href="#"><em>Unique Style</em></a>
+                <div class="input-group">
+                    <input type="text" class="form-control" style="max-width: 400px;" placeholder="Search" aria-label="Search" aria-describedby="search-button">
+                    <button class="btn btn-outline-secondary" type="button" id="search-button">Search</button>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html">Home <i class="fa-sharp fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop <i class="fa-solid fa-shop"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="wishlist1.html">Cart <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signInModal">Login <i class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+
+    <!-- ****************************************Header section ended************************************* -->
+
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- ***************************** sign-in form here************************************** -->
+                    
+                    <div class="container-1" style="margin-top: 10px;">
+                        <div class="login-form">
+                            <h3>LOGIN OR SIGNUP</h3>
+                            <form action="login.page" method="POST">
+                                <div class="form-group">
+                                    <label for="username">Username:</label>
+                                    <input type="text" id="username" name="username" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password:</label>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                                <button type="submit">Login</button>
+                            </form>
+                            <p>OR CONTINUE WITH:</p>
+                            <div class="social-login">
+                                <a href="https://www.facebook.com" class="facebook-login bg-primary">Login with Facebook</a>
+                                <a href="mailto:uniquestyle@email.com" class="email-login bg-warning">Login with Email</a>
+                                <a href="tel:+1234567890" class="phone-login bg-success">Login with Phone Number</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ************************************Header ending************************************* -->
+
+    <!-- ************************This is Bannner Section****************************** -->
+
+    <div id="mycarousel" class="carousel slide mt-5 " data-bs-ride="carousel">
+        <ol class="carousel-indicators " style="list-style-type: none;">
+          <li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"> </li>
+          <li data-bs-target="#mycarousel" data-bs-slide-to="1"> </li>
+          <li data-bs-target="#mycarousel" data-bs-slide-to="2"> </li>
+          <li data-bs-target="#mycarousel" data-bs-slide-to="3"></li>
+
+        </ol>
+        <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="Images/s1.jpg" class="d-block w-100" style="height: 500px;">
+              <div class="card-img-overlay display-5 text-white  text-center mt-5 new"><em>New Collection</em> <br>
+                <a href="explorenew.html" class="btn btn-light">Explore New Arrivals</a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Images/suits.webp" class="d-block w-100" style="height: 500px;">
+              <div class="card-img-overlay display-6 text-info text2"> 
+                
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Images/b2.jpeg" class="d-block w-100" style="height: 500px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Images/slide1.webp" class="d-block w-100" style="height: 500px;">
+            </div>
+          </div>
+          <a href="#mycarousel" class="carousel-control-prev" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+        <!-- **************************This is Most Popular section****************** -->
+        <h2 class="display-6 py-5 text-center">Most Popular</h2>
+        <div class="container1">
+            <div class="row">
+                <div class="col-12 col-lg my-2 " id="card-one">
+                    <div class="card">
+                        <a href="product1.html"><img src="images/img1.jpg" alt="product" class="card-img-top hover-zoom" height="250px"></a>
+                        <div class="card-body">
+                            <p class="card-text fw-bold">GLARE & BLAIR</p>
+                            <small class="text-secondary fw-bold">
+                                <p class="text-muted">Original Price: <del>₹600</del></p>
+                                <p class="text-success">Price After Discount: ₹450</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+      
+              <div class="col-12 col-lg my-2" id="card-two">
+                  <div class="card">
+                      <a href="product2.html"><img src="images/img2.jpg" alt="product" class="card-img-top hover-zoom" height="250px"></a>
+                      <div class="card-body">
+                          <p class="card-text fw-bold">MANOJAVA</p>
+                          <small class="text-secondary fw-bold">
+                              <p class="text-muted">Original Price: <del>₹1000</del></p>
+                              <p class="text-success">Price After Discount: ₹850</p>
+                          </small>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="col-12 col-lg my-2" id="card-three">
+                  <div class="card">
+                      <a href="product3.html"><img src="images/img3.jpg" alt="product" class="card-img-top hover-zoom " height="250px"></a>
+                      <div class="card-body">
+                          <p class="card-text fw-bold">HIVA TRENDZ</p>
+                          <small class="text-secondary fw-bold">
+                              <p class="text-muted">Original Price: <del>₹900</del></p>
+                              <p class="text-success">Price After Discount: ₹750</p>
+                          </small>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-lg my-2" id="card-four">
+                <div class="card">
+                    <a href="product4.html"><img src="images/img4.jpg" alt="product" class="card-img-top hover-zoom " height="250px"></a>
+                    <div class="card-body">
+                        <p class="card-text fw-bold">HEARTLOOM</p>
+                        <small class="text-secondary fw-bold">
+                            <p class="text-muted">Original Price: <del>₹900</del></p>
+                            <p class="text-success">Price After Discount: ₹750</p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg my-2" id="card-five">
+              <div class="card">
+                  <a href="product5.html"><img src="images/img5.jpg" alt="product" class="card-img-top hover-zoom" height="250px"></a>
+                  <div class="card-body">
+                      <p class="card-text fw-bold">MENIKI</p>
+                      <small class="text-secondary fw-bold">
+                          <p class="text-muted">Original Price: <del>₹600</del></p>
+                          <p class="text-success">Price After Discount: ₹450</p>
+                      </small>
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+      </div>
+      <div class="text-center ">
+        <a href="newcollection.html" class="btn btn-outline-warning my-5">New Collection</a>
+    </div>
+      <div class="row py-1 text-center ">
+        <div class="col-md">
+          <div class="image-container">
+              <img src="images/e2.webp" alt="Product 1" class="img-fluid rounded-circle">
+              
+          </div>
+          <h5>KALKI FASHION</h5>
+          <p>10% Off ₹1150</p>
+      </div>
+      
+      <div class="col-md">
+          <div class="image-container">
+              <img src="images/e9.jpeg" alt="Product 2" class="img-fluid rounded-circle">
+              
+          </div>
+          <h5>GAYRAA</h5>
+          <p>20% off ₹1650</p>
+      </div>
+      
+      <div class="col-md">
+          <div class="image-container">
+              <img src="images/e8.jpeg" alt="Product 3" class="img-fluid rounded-circle">
+               
+          </div>
+          <h5>Ganga Fashions</h5>
+          <p>40% off ₹1750</p>
+      </div>
+      
+      <div class="col-md">
+          <div class="image-container">
+              <img src="images/eth12.jpeg" alt="Product 3" class="img-fluid rounded-circle">
+               
+          </div>
+          <h5>Janasya</h5>
+          <p>30% off ₹1200</p>
+      </div>
+      <div class="col-md">
+        <div class="image-container">
+            <img src="images/e4.webp" alt="Product 3" class="img-fluid rounded-circle">
+            
+        </div>
+        <h5>Shaily</h5>
+        <p>10% off ₹950</p>
+    </div>
+    </div>
+        <!-- ************************This is View all section*************************** -->
+        <div class="text-center">
+          <a href="explorenew.html" class="btn btn-outline-dark my-5">View All Products</a>
+      </div>
+      <div class="d-flex justify-content-between align-item-center flex-column flex-lg-row my-1 img ">
+     <div class="position-relative m-2 " id="p1"><img src="images/d1.jpeg" alt="Dress" height="350">
+      <a href="wishlist1.html" class="btn btn-danger position-absolute start-0 bottom-0 ms-2 mb-2 d-block">Shop Now </a>
+      </div>
+      <div class="position-relative m-2" id="p2"><img src="images/slide2.jpeg" alt="Dress" height="350">
+        <a href="wishlist1.html" class="btn btn-danger position-absolute start-0 bottom-0 ms-2 mb-2 d-block">Shop Now</a>
+        </div>
+        <div class="position-relative m-2" id="p3"><img src="images/e6.jpeg" alt="Dress" height="350">
+          <a href="wishlist1.html" class="btn btn-danger position-absolute start-0 bottom-0 ms-2 mb-2 d-block">Shop Now</a>
+          </div>
+          <div class="position-relative m-2" id="p4"><img src="images/e4.webp" alt="Dress" height="350">
+            <a href="wishlist1.html" class="btn btn-danger position-absolute start-0 bottom-0 ms-2 mb-2 d-block">Shop Now</a>
+            </div>
+            <div class="position-relative m-2" id="p5"><img src="images/p3.webp" alt="Dress" height="350">
+              <a href="wishlist1.html" class="btn btn-danger position-absolute start-0 bottom-0 ms-2 mb-2 d-block">Shop Now</a>
+              </div>
+      </div>
+      <!-- ************************This is the ending section************************** -->
+    <div class="container bg-light py-5 ">
+        <div class="row">
+            <div class="col-md-6" >
+                <img src="images/s2.jpeg" alt="Image Description" height="450px" width="500px">
+            </div>
+            <div class="col-md-6 pt-5">
+                <h2>SIDDARTHA TYTLER X FABALLEY</h2>
+                <p>
+                    Setting the tone for balmy summer days, Faballey joins forces with designer Siddartha Tytler for 
+                    an eclectic capsule that is as apt for far-flung destinations, as it is for work, play and everything in between.
+                    Time to jet-set-go, and land into a tropical dreamland—because no
+                    matter where we are, a perpetual destination-bound state of mind is inevitable!
+                </p>
+                <a href="exploremore.html" class="btn btn-outline-dark my-1">Explore More</a>
+            </div>
+        </div>
+    </div>
+        <!-- *************************This is footer part************************** -->
+  
+        <div class="container-fuild bg-danger px-5  text-white">
+          <div class="row row-cols-lg-6 row-cols-md-3 row-cols-sm-2">
+              <div class="col-md mt-5 ">
+                  <h4>ABOUT</h4>
+                  <a href="contact.html" style="color: white; text-decoration:none;" ><P>Contact Us</P></a>
+                 <a href="about.html" style="color: white; text-decoration:none;"> <P> About Us</P></a>
+                  
+                     
+              </div>
+              <div class="col-md mt-5">
+                <a href="contact.html" style="color: white; text-decoration:none;" ><h4>HELP</h4></a>
+                  <a href="payment2.html" style="color: white; text-decoration:none;"> <P>Payments</P></a>
+                  <a href="contact.html" style="color: white; text-decoration:none;"><P>Shipping</P></a>
+                  
+                  <a href="Return.html" style="color: white; text-decoration:none;"><P>Cancellation & Returns</P></a>
+                   
+              </div>
+  
+              <div class="col-md mt-5">
+                  <a href="terms.html" style="color: white; text-decoration:none;"><h4>CONSUMER POLICY</h4></a>
+                  <a href="Return.html" style="color: white; text-decoration:none;"><P>Cancellation & Returns</P></a>
+                  <a href="terms.html" style="color: white; text-decoration:none;"><P>Terms Of Use</P></a>
+                  
+                   
+              </div>
+              <div class="col-md mt-5">
+                  <h4>SOCIAL</h4>
+                  <a href="https://www.facebook.com" style="color: white; text-decoration:none;"><P>Facebook</P></a>
+                  <a href="https://twitter.com/" style="color: white; text-decoration:none;"><P>Twitter</P></a>
+                    <a href="https://www.youtube.com" style="color: white; text-decoration:none;"><P>Youtube</P></a>
+                    <a href="https://www.instagram.com" style="color: white; text-decoration:none;"><P>Instagram</P></a>
+              </div>
+              <div class="col-md mt-5 ">
+                  <h4> Mail Us:</h4>
+                  <P>  K-13 Mahipalpur
+                    Block-2
+                      New dehli, 560103,
+                       , India</P>
+                       <b>Head Office</b>
+                       <p>Pune & Mumbai,
+                        820102,
+                        , India
+                       </p>
+              </div>
+              
+  
+          </div>
+          <div class="row  border-top mt-4">
+  
+              <div class="col-md  my-1">
+                <a href="index.html" style="color: white; text-decoration:none;">  <p><i class="fa-solid fa-shop" style="color: #333023;"></i> Order Now</p></a>
+              </div>
+               
+              <div class="col-md  my-1">
+                <a href="contact.html" style="color: white; text-decoration:none;">    <p><i class="fa-solid fa-question" style="color: #333023;"></i> Help Center</p>
+              </a></div>
+              <div class="col-md  my-1">
+                <a href="https://www.google.com " style="color: white; text-decoration:none;">  <p><i class="fa-regular fa-copyright"></i> uniquestyle.com</p></a>
+              </div>
+              <div class="col-md  my-1"> <a href="payment.html" style="color: white; text-decoration:none;">
+                  <p><i class="fa-brands fa-cc-mastercard fa-xl"></i>
+                      <i class="fa-brands fa-cc-visa fa-xl"></i>
+                      <i class="fa-brands fa-cc-stripe fa-xl"></i>
+                      <i class="fa-brands fa-cc-paypal fa-xl"></i>
+                      <i class="fa-brands fa-cc-jcb fa-xl"></i>
+                      <i class="fa-brands fa-cc-discover fa-xl"></i>
+                      <i class="fa-brands fa-cc-apple-pay fa-xl"></i> </a>
+                      
+              </div>
+          </div>
+  
+      </div>
+         <!-- **********************************This is animation section******************************************** -->
+    <script src="jquery.js"> </script>
+
+    <script type="text/javascript">
+        $(document).ready(function ()
+         {
+            $(window).scroll(function () {
+                var positiontop = $(document).scrollTop();
+                console.log(positiontop);
+
+                if ((positiontop > 100) && (positiontop < 413)) {
+                    $('#card-one').addClass('animate__animated animate__bounceInLeft');
+                    $('#card-two').addClass('animate__animated animate__flipInX');
+                    $('#card-three').addClass('animate__animated animate__flipInX');
+                    $('#card-four').addClass('animate__animated animate__flipInX');
+                    $('#card-five').addClass('animate__animated animate__bounceInRight');
+                }
+                 
+                
+            });
+        })
+
+    </script>
+
+<script type="text/javascript">
+    $(document).ready(function ()
+     {
+        $(window).scroll(function () {
+            var positiontop = $(document).scrollTop();
+            console.log(positiontop);
+
+            if ((positiontop >1260) && (positiontop < 1822)) {
+                $('#p1').addClass('animate__animated animate__bounceInLeft');
+                $('#p2').addClass('animate__animated animate__flipInX');
+                $('#p3').addClass('animate__animated animate__flipInX');
+                $('#p4').addClass('animate__animated animate__flipInX');
+                $('#p5').addClass('animate__animated animate__bounceInRight');
+                 
+            }
+             
+            
+        });
+    })
+
+</script>
+ <script type="text/javascript">
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 200) {
+            $(".header").addClass("active");
+
+        }
+        else {
+            $(".header").removeClass("active");
+
+        }
+    });
+</script>
+ 
+            <!-- *************************This is Ending of Footer Section****************************8-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

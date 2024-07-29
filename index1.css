@@ -1,0 +1,78 @@
+ 
+@media (max-width: 480px) {
+    .container-1 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ImageDescription {
+      
+      max-width: 100%;
+    }
+  }
+  
+
+
+.login-form {
+    text-align: center;
+}
+
+ 
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.header {
+    background-color:#fff;
+    transition:all 1s ease-in-out;
+}
+.header.active{
+    background-color:#ff3366;
+    color: white;
+}
+
+.new{
+    padding-top: 130px;
+    padding-right: 30px;
+}
